@@ -1,0 +1,8 @@
+(scene
+  (circle :a 0.0 0.0 30)
+  (circle :b 1.0 1.0 30))
+
+(anim
+  (loop (move (:a :b) 0.5 0.5 2s)
+        [(move :a 0.0 0.0 2s)
+         (move :b 1.0 1.0 2s)]))
